@@ -1,0 +1,209 @@
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	width: 960px;
+	margin: auto;
+}
+
+#header {
+	background: linear-gradient(
+      rgba(59, 61, 64, 0.7), 
+      rgba(59, 61, 64, 0.7)
+    ),
+    /* bottom, image */
+  url(https://images.pexels.com/photos/262413/pexels-photo-262413.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb);
+  background-size: 100% 100%;
+}
+
+nav {
+	letter-spacing: 2px;
+}
+
+/*flexbox styles*/
+.d-f {
+	display: flex;
+}
+
+.fd-c {
+	flex-direction: column;
+}
+
+.jc-sb {
+	justify-content: space-between;
+}
+
+.flex-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/*flexbox styles end*/
+header {
+	height: 100vh;
+}
+
+.your-company-here {
+	width: 5rem;
+	height: 0.75rem;
+	color: white;
+	font-family: Raleway;
+	font-size: 1rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.desktop-topbar-container {
+	width: 960px; margin: auto; padding-top: 50px;
+}
+
+#top-nav-links {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 37px; 
+}
+
+#top-nav-links a {
+	color: white;
+	font-family: Raleway;
+	font-size: 0.75rem;
+	font-weight: 700;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#top-social-icons {
+	width: 112px;
+	justify-content: space-around;
+	display: flex;
+}
+
+.underline {
+	background-color: rgb(235, 237, 238);
+  display: block;
+  height: 2px;
+  width: 100%;
+  padding: 0;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+a:hover .underline {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+nav {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.topbar-after-scroll {
+	padding-top: 5px;
+}
+div,
+nav {
+  transition: .7s all;
+  -moz-transition: .7s all;
+  -webkit-transition: .7s all;
+  -o-transition: .7s all;
+}
+
+
+.full-h-w {
+	height: 100vh;
+	width: 100vw;
+}
+
+.your-logo-here {
+	width: 3.938rem;
+	height: 3.938rem;
+}
+.headline {
+	color: white;
+	font-family: Raleway;
+	font-size: 3.25rem;
+	font-weight: 700;
+	line-height: 3.438rem;
+	text-align: center;
+	margin-top: 23px;
+}
+
+.supporting-copy {
+	opacity: 0.7;
+	color: white;
+	font-family: "Adobe Caslon Pro";
+	font-size: 1.5rem;
+	font-weight: 600;
+	line-height: 1.625rem;
+	text-align: center;
+	margin-top: 34px;
+}
+
+
+/*section two*/
+
+#two {	
+	height: 45.063rem;
+	background-color: rgb(249, 249, 249);
+}
+
+#two .headline {
+	color: rgb(59, 61, 64);
+	font-family: Raleway;
+	font-size: 3.25rem;
+	font-weight: 700;
+	line-height: 3.438rem;
+	margin-top: 116px;
+}
+#two .supporting-copy {
+	color: rgb(102, 102, 102);
+	font-family: "Adobe Caslon Pro";
+	font-size: 1.5rem;
+	font-weight: 600;
+	line-height: 1.625rem;
+	padding-top: 24px;
+	opacity: 1;
+}
+
+#two-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 90px;
+	margin-top: 71px;
+}
+
+#two-grid p {
+	color: rgb(101, 107, 111);
+	font-family: "Adobe Caslon Pro";
+	font-size: 0.938rem;
+	font-weight: 600;
+	line-height: 1.25rem;
+}
+
+.button {
+	width: 10.125rem;
+	height: 2.813rem;
+	background-color: rgb(46, 113, 242);
+	border-radius: 22px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 56px auto 51px auto;
+}
+
+.read-more {
+		color: white;
+	font-family: Raleway;
+	font-size: 0.75rem;
+	font-weight: 700;
+}
+
+a {
+	text-decoration: none;
+}

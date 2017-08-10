@@ -1,0 +1,297 @@
+<html>
+<body>
+<style type="text/css">
+	/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: flex;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+</style>
+<div class="community-slider-container">
+  <ul class="community-slider">
+  <!-- community-slider li = .slick-slide -->
+    <li>your content</li>
+    <li>your content</li>
+    <li>your content</li>
+    <li>4</li>
+  </ul>
+</div>
+<style type="text/css">
+	/* Slider */
+.slick-slider
+{
+    position: relative;
+
+    display: flex;
+
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: flex;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: flex;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: flex;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: flex;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: flex;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+
+.community-slider-container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.community-slider {
+  background: cyan;
+  margin: 0 auto;
+}
+
+.slick-list {
+  width: 87%; margin: 0 auto;
+}
+
+.slick-slide {
+  width: 313px;
+  height: 400px;
+  margin-right: 20px;
+  background: salmon;
+}
+@media (min-width: 1100) {
+	body {
+		background-color: green;
+	}
+}
+
+@media (max-width: 1100px) {
+	.community-slider-container {
+		width: 750px;
+	}
+}
+
+@media (max-width: 750px) {
+	.community-slider-container {
+		width: calc(100% - 50px);
+	}
+	.slick-slide {
+		margin: auto;
+	}
+}
+/*
+@media (max-width: 768px)
+{
+  body {
+    background: red;
+    height:100vh;
+  }
+  .community-slider-container {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .community-slider {
+    background: cyan;
+    margin: 0 auto;
+  }
+
+  .slick-list {
+    width: 650px; margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px)
+{
+  body {
+    background: lightgreen;
+    height:100vh;
+  }
+  .community-slider-container {
+    width: 420px;
+    margin: 0 auto;
+  }
+
+  .community-slider {
+    background: cyan;
+    margin: 0 auto;
+  }
+
+  .slick-list {
+    width: 420px; margin: 0 auto;
+  }
+}*/
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script type="text/javascript">
+	$('.community-slider').slick({
+  variableWidth: true,
+  slidesToShow: 3,
+  prevArrow:"<img class='a-left control-c prev slick-prev' src='img/LeftArrow.svg'>",
+      nextArrow:"<img class='flipH a-right control-c next slick-next' src='img/LeftArrow.svg'>",
+
+  responsive: [
+    {
+      breakpoint: 1100,
+      settings: {
+        variableWidth: true,
+        arrows: true,
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 750,
+      settings: {
+        variableWidth: false,
+        arrows: true,
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+</script>
+</body>
+</html>
