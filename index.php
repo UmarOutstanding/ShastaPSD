@@ -1,23 +1,21 @@
-<!doctype html>
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="css/m-dd.css"/>
+  <link rel="stylesheet" href="css/m-dd.css"/>
   <link rel="stylesheet" href="css/slider.css">
-	<link href="css/style.css" rel="stylesheet" type="text/css"/>
-	<link href="css/mobile.css" rel="stylesheet" type="text/css" media="(max-width: 480px)">
-	<link rel="stylesheet" 
-			href="css/reset.css" />
-			
-	<title>
-		Shasta PSD to HTML 
-	</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	
+  <link href="css/style.css" rel="stylesheet" type="text/css"/>
+  <link href="css/mobile.css" rel="stylesheet" type="text/css" media="(max-width: 480px)">
+  <link rel="stylesheet" 
+      href="css/reset.css" />
+      
+  <title>
+    Shasta PSD to HTML 
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 <body>
+
 <?php   include 'header.php';
         include 'two.php';
         include 'community.html';
@@ -31,18 +29,14 @@
 ?>
 
 
+  <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+  <script src="https://vjs.zencdn.net/6.2.4/video.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-
-
-
-	<script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
-	<script src="https://vjs.zencdn.net/6.2.4/video.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-	<script>
-		
-		 $(document).ready(function() {
-		 	$(".vjs-big-play-button").wrap("<div class=fcfh></div>")
+  <script>
+    
+     $(document).ready(function() {
+      $(".vjs-big-play-button").wrap("<div class=fcfh></div>")
       $("#top-nav-links>a").append(" <span class='underline'></span>"); 
     });
      $(document).on("scroll", function() {
@@ -58,8 +52,8 @@
       }
 
     });
-	</script>
-	<script src="js/m-dd.min.js"></script>
+  </script>
+  <script src="js/m-dd.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
    <script type="text/javascript">
     $(document).ready(function(){
