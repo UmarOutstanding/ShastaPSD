@@ -15,18 +15,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	
-<script type="text/javascript">
-  var docWidth = document.documentElement.offsetWidth;
 
-[].forEach.call(
-  document.querySelectorAll('*'),
-  function(el) {
-    if (el.offsetWidth > docWidth) {
-      console.log(el);
-    }
-  }
-);
-</script>
 </head>
 <body>
 <?php   include 'header.php';
@@ -70,7 +59,7 @@
 
     });
 	</script>
-	<script src="js/m-dd.js"></script>
+	<script src="js/m-dd.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
    <script type="text/javascript">
     $(document).ready(function(){
