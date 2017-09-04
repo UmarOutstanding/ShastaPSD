@@ -1,0 +1,5 @@
+{
+	"scripts": {
+    	"concat-css": "cat css/* > css/all.css"
+  	}
+}
