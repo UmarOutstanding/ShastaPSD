@@ -1,0 +1,46 @@
+<section id="culture" class="flex-container">
+<h2 class="heading">Learn more<br>
+about our culture...</h2>
+<div class="flex-container fd-c">
+<video id="my-video" class="video-js vjs-big-play-centered"
+       controls preload="auto" data-setup="{}">
+  <source src="https://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+</video>
+<p class="supporting-copy">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+</div>
+</section>
+
+<style type="text/css">
+	#my-video {
+		width: 640px;
+		height: 360px;
+	}
+
+	@media (max-width: 750px) {
+		#my-video {
+			width: 75%;
+		}
+	}
+</style>
+
+<link rel="stylesheet" href="https://vjs.zencdn.net/5-unsafe/video-js.css"/>
+<style type="text/css">
+	.video-js .vjs-big-play-button {
+  background-color: rgb(46, 113, 242);
+	border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  top: auto; left: auto; margin: 0; border: 0;
+}
+
+.vjs-icon-play:before, .video-js .vjs-big-play-button:before, .video-js .vjs-play-control:before {
+  display: flex; justify-content: center; align-items: center;
+}
+
+.fcfh {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+</style>

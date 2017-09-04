@@ -1,11 +1,18 @@
 body {
-	display: flex;
-	flex-direction: column;
+	overflow-x: hidden;
 }
 
 .container {
 	width: 960px;
-	margin: auto;
+	margin: 0 auto;
+}
+
+.button {
+	background-color: rgb(46, 113, 242);
+	border-radius: 22px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #header {
@@ -19,12 +26,17 @@ body {
 }
 
 nav {
+	z-index: 1;
 	letter-spacing: 2px;
 }
 
 /*flexbox styles*/
 .d-f {
 	display: flex;
+}
+
+.fw-w {
+	flex-wrap: wrap;
 }
 
 .fd-c {
@@ -106,6 +118,9 @@ nav {
 .topbar-after-scroll {
 	padding-top: 5px;
 }
+.changeBG {
+	background-color: dodgerblue;
+}
 div,
 nav {
   transition: .7s all;
@@ -117,7 +132,7 @@ nav {
 
 .full-h-w {
 	height: 100vh;
-	width: 100vw;
+	width: 100%;
 }
 
 .your-logo-here {
@@ -148,8 +163,7 @@ nav {
 
 /*section two*/
 
-#two {	
-	height: 45.063rem;
+#two {
 	background-color: rgb(249, 249, 249);
 }
 
@@ -167,7 +181,7 @@ nav {
 	font-size: 1.5rem;
 	font-weight: 600;
 	line-height: 1.625rem;
-	padding-top: 24px;
+	margin-top: 24px;
 	opacity: 1;
 }
 
@@ -186,7 +200,7 @@ nav {
 	line-height: 1.25rem;
 }
 
-.button {
+#two .button {
 	width: 10.125rem;
 	height: 2.813rem;
 	background-color: rgb(46, 113, 242);
@@ -194,7 +208,7 @@ nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 56px auto 51px auto;
+	margin: 56px auto 107px auto;
 }
 
 .read-more {
@@ -206,4 +220,487 @@ nav {
 
 a {
 	text-decoration: none;
+}
+
+
+/*community*/
+
+#community {
+	flex-direction: column;
+	justify-content: flex-start;
+	
+background: -webkit-linear-gradient(to top, #1cefff, #c0c0aa);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #1cefff, #c0c0aa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+height: 110vh;
+padding-bottom: 100px;
+}
+
+#community .heading {
+	color: rgb(59, 61, 64);
+	font-family: Raleway;
+	font-size: 52px;
+	font-weight: 700;
+	line-height: 55px;
+	margin-top: 72px;
+	text-align: center;
+}
+
+#community .supporting-copy {
+	color: rgb(101, 107, 111);
+	font-family: "Adobe Caslon Pro";
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 26px;
+	margin-top: 20px;
+	opacity: 1;
+}
+
+#community-slider-container {
+	margin-top: 53px;
+}
+
+.slick-slide img {
+	border-radius: 50%;
+}
+
+.quote {
+	color: rgb(101, 107, 111);
+	font-family: "Adobe Caslon Pro";
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 18px;
+
+	text-align: center;
+
+	margin-top: 23px;
+}
+
+.name {
+	color: rgb(60, 61, 65);
+	font-family: Raleway;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-top: 42px;
+}
+.title {
+	color: rgb(101, 107, 111);
+	font-family: "Adobe Caslon Pro";
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 16px;
+	margin-top: 11px;
+}
+.slick-slide {
+	background-color: rgb(255, 255, 255);
+	border-radius: 4px;
+	flex-direction: column;
+}
+
+.br-z {
+	border-radius: 0 !important;
+}
+
+.triangle {
+	-webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.mystar {
+-webkit-clip-path: polygon(50% 0%, 100% 0, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+clip-path: polygon(50% 0%, 100% 0, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+
+/*styles for what-people-say */
+#what-people-say {
+        height: 639px;
+        flex-direction: column;
+        justify-content: flex-start !important;
+        	background-color: rgb(46, 113, 242);
+    }
+
+    .what-people-say-heading {
+    width: 140px;
+    height: 9px;
+    color: rgb(255, 255, 255);
+    font-family: Raleway;
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 112px;
+    margin-bottom: 72px;
+}
+
+.wps-quote {
+	color: rgb(255, 255, 255);
+	font-family: "Adobe Caslon Pro";
+	font-size: 34px;
+	font-weight: 600;
+	line-height: 42px;
+}
+
+.what-people-say-slider .slick-slide {
+	background-color: transparent;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  opacity: 0.3;
+  background-color: rgb(255, 255, 255);
+  margin-top: 48px;
+}
+.what-people-say-slider .name {
+	color: rgb(255, 255, 255);
+	font-family: Raleway;
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.what-people-say-slider .title {
+	opacity: 0.7;
+	color: rgb(255, 255, 255);
+	font-family: "Adobe Caslon Pro";
+	font-size: 14px;
+	font-weight: 600;
+	margin-top: 10px;
+}
+
+/* liberating */
+
+#liberating {
+	height: 520px;	background-color: rgb(249, 249, 100);
+}
+
+#liberating .grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-top: 111px;
+}
+
+#liberating .grid-box img {
+	border-radius: 50%;
+}
+
+#liberating .headline {
+	width: 279px;
+	height: 104px;
+	color: rgb(59, 61, 64);
+	font-family: Raleway;
+	font-size: 52px;
+	font-weight: 700;
+	line-height: 55px;
+	margin-top: 5px;
+}
+#liberating .text {
+	width: 416px;
+	height: 75px;
+	color: rgb(101, 107, 111);
+	font-family: "Adobe Caslon Pro";
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 27px;
+	margin-top: 24px;
+}
+
+#liberating .button {
+	margin: 54px auto 0 4px;
+	width: 190px;
+	height: 45px;
+}
+
+.grid-box {
+	flex-direction: column;
+}
+
+.grid-text {
+	justify-content: flex-start !important;
+	align-items: flex-start !important;
+	margin-left: 4px;
+}
+
+.join-our-team {
+	color: rgb(255, 255, 255);
+	font-family: Raleway;
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.text-left {
+	text-align: left !important;
+}
+
+@media (max-width: 750px) {
+
+	#liberating {
+		height:auto;
+	}
+
+	#liberating .grid {
+		grid-template-columns: auto !important;
+		grid-template-rows: 1fr 1fr;
+		margin-top: 71px;
+	}
+
+	#liberating .grid-box:nth-child(1) {
+		justify-content: flex-start;
+	}
+	#liberating .grid-text {
+		justify-content: center !important;
+		align-items: center !important;
+		margin-left:0;
+	}
+
+	#liberating .headline {
+		margin-top: -7px;
+		width: 246px;
+		height: 96px;
+		color: rgb(59, 61, 64);
+		font-family: Raleway;
+		font-size: 46px;
+		font-weight: 700;
+		line-height: 52px;
+	}
+
+	#liberating .text {
+		margin-top: 20px;
+	}
+
+	#liberating .text-left {
+		text-align: center !important;
+	}
+
+	#liberating .button {
+		margin-top: 43px;
+		width: 190px;
+		height: 45px;
+		background-color: rgb(46, 113, 242);
+		margin-bottom: 75px;
+	}
+}
+
+/*INVEST*/
+#invest {
+	height: 520px;	
+	background-color: rgb(249, 100, 200);
+}
+
+#invest .grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-top: 111px;
+}
+
+#invest-image-box img {
+	max-width:100%;
+	height:auto;
+	border-radius: 50%;
+}
+
+#invest-image-box {
+	order:2;
+	justify-content: flex-start !important;
+}
+
+#invest .grid-text {
+	order:1;
+}
+
+#invest .button {
+	width: 136px;
+	height: 45px;
+	background-color: rgb(46, 113, 242);
+	border-radius: 22px;
+	color:white;
+	margin-top: 54px;
+}
+
+.donate {
+	color: rgb(255, 255, 255);
+	font-family: Raleway;
+	font-size: 12px;
+	font-weight: 700;
+}
+
+#invest .text {
+	width: 416px;
+	height: 102px;
+	color: rgb(101, 107, 111);
+	font-family: "Adobe Caslon Pro";
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 27px;
+	margin-top:26px;
+
+}
+
+#invest .headline {
+	margin-top: 0;
+}
+
+@media (max-width: 750px) {
+	#invest {
+			height: auto;
+	}
+
+	#invest .text {
+	width: 357px;
+	height: 124px;
+	color: rgb(101, 107, 111);
+	font-family: "Adobe Caslon Pro";
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 27px;
+}
+
+	#invest .grid {
+		grid-template-columns: auto;
+		margin-top: 71px;
+		grid-template-rows: fit-content(300px) fit-content(300px) 1fr;
+	}
+
+	#invest-image-box {
+	order:1;
+	}
+
+	#invest .grid-text {
+	order:2;
+	}
+
+	#invest .grid-text {
+    justify-content: center !important;
+    align-items: center !important;
+    margin-left: 4px;
+}
+
+	#invest .headline {
+	width: 267px;
+	height: 138px;
+	color: rgb(59, 61, 64);
+	font-family: Raleway;
+	font-size: 46px;
+	font-weight: 700;
+	line-height: 52px;
+	text-align: center !important;
+	margin-top: 48px;
+}
+
+#invest-image-box {
+	justify-content: flex-start !important;
+}
+}
+
+/*CULTURE*/
+#culture {
+	height: 698px;
+	flex-direction: column;
+		background-color: rgb(59, 61, 64);
+		background: linear-gradient(
+      rgba(59, 61, 64, 0.7), 
+      rgba(59, 61, 64, 0.7)
+    ),
+    /* bottom, image */
+  url(../img/Pakistan.jpg);
+  background-size: 100% 100%;
+}
+
+#culture .heading {
+	color: rgb(255, 255, 255);
+	font-family: Raleway;
+	font-size: 52px;
+	font-weight: 700;
+	line-height: 55px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+#culture .supporting-copy {
+	width: 369px;
+	height: 76px;
+	opacity: 0.7;
+	color: rgb(255, 255, 255);
+	font-family: "Adobe Caslon Pro";
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 26px;
+	margin-top: 0 !important;
+}
+
+/*YNM*/
+
+#your-next-move {
+		
+		padding-top:111px;
+		padding-bottom: 98px;
+}
+
+
+.ynm-heading {
+	width: 400px;
+	height: 38px;
+	color: rgb(59, 61, 64);
+	font-family: Raleway;
+	font-size: 52px;
+	font-weight: 700;
+	line-height: 55px;
+	margin-top: 30px;
+}
+
+#your-next-move .supporting-copy {
+	width: 396px;
+	height: 51px;
+	color: rgb(101, 107, 111);
+	font-family: "Adobe Caslon Pro";
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 26px;
+	margin-top: 27px;
+}
+
+
+#ynm-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap:56px;
+	margin-top: 68px;
+}
+
+#ynm-grid > div {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#ynm-grid img {
+	width: 25px;
+	height: 25px;
+}
+#ynm-grid .heading {
+	color: rgb(59, 61, 64);
+	font-family: Raleway;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-top: 20px;
+	margin-bottom: 16px;
+}
+
+#ynm-grid .copy {
+	width: 186px;
+	height: 35px;
+	color: rgb(101, 107, 111);
+	font-family: "Adobe Caslon Pro";
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 18px;
+	text-align: center;
+}
+
+@media (max-width: 750px) {
+	#ynm-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap:47px 31px;
+}
 }

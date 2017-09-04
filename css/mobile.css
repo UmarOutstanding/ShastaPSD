@@ -1,6 +1,6 @@
 .container {
 	width: 420px;
-	margin:auto;
+	margin:0 auto;
 	max-width: 100%;
 }
 
@@ -31,7 +31,7 @@
 /*two*/
 
 #two {
-	height: 50.625rem;
+
 }
 
 #two .headline {
@@ -40,6 +40,7 @@
 	font-size: 2.875rem;
 	font-weight: 700;
 	line-height: 3.25rem;
+	margin-top: 85px;
 }
 #two .supporting-copy {
 	width: 24.813rem;
@@ -60,6 +61,22 @@
 	margin-top: 48px;
 }
 
-.button {
-	margin-top: 42px;
+#two .button {
+	margin: 42px auto 51px auto;
+}
+/*liberating*/
+#liberating {
+	height:auto;
+}
+
+/*culture*/
+#culture .heading {
+	font-size:46px;
+}
+
+/*join-our-program*/
+#join-our-program .two-column-grid{
+	grid-template-rows:1fr 1fr;
+	grid-template-columns:auto;
+	width: 420px;
 }
