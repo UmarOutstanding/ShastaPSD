@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="css/m-dd.css"/>
+ <!-- <link rel="stylesheet" href="css/m-dd.css"/>
   <link rel="stylesheet" href="css/slider.css">
   <link href="css/style.css" rel="stylesheet" type="text/css"/>
   <link href="css/mobile.css" rel="stylesheet" type="text/css" media="(max-width: 480px)">
-  <link rel="stylesheet" 
-      href="css/reset.css" />
+  <link rel="stylesheet" href="css/reset.css" />-->
+  <link rel="stylesheet" href="css/all.css"/>
       
   <title>
     Shasta PSD to HTML 

@@ -822,6 +822,7 @@ clip-path: polygon(50% 0%, 100% 0, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 
 		height: 45px;
 		background-color: rgb(46, 113, 242);
 		margin-bottom: 75px;
+		margin-left: 0;
 	}
 }
 
@@ -858,7 +859,8 @@ clip-path: polygon(50% 0%, 100% 0, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 
 	background-color: rgb(46, 113, 242);
 	border-radius: 22px;
 	color:white;
-	margin-top: 54px;
+	margin-top: 43px;
+	margin-bottom: 75px;
 }
 
 .donate {
@@ -902,7 +904,6 @@ clip-path: polygon(50% 0%, 100% 0, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 
 	#invest .grid {
 		grid-template-columns: auto;
 		margin-top: 71px;
-		grid-template-rows: fit-content(300px) fit-content(300px) 1fr;
 	}
 
 	#invest-image-box {
@@ -916,7 +917,7 @@ clip-path: polygon(50% 0%, 100% 0, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 
 	#invest .grid-text {
     justify-content: center !important;
     align-items: center !important;
-    margin-left: 4px;
+    margin-left: 0px;
 }
 
 	#invest .headline {
@@ -1091,6 +1092,15 @@ clip-path: polygon(50% 0%, 100% 0, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 
 		grid-gap:26px;
 		width: 584px;
 		margin-top: 62px;
+	}
+
+	@media (max-width: 630px) {
+		.two-column-grid {
+			grid-template-columns: auto;
+			grid-template-rows: repeat(2,1fr);
+			/*put the input box in the middle by width:auto;*/
+			width: auto;
+		}
 	}
 
 	.email-input {
